@@ -40,31 +40,7 @@
     <nav>
       <div class="navbar">
       <div class="navbar-start">
-     <div class="dropdown">
-      <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="h-5 w-5"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor">
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M4 6h16M4 12h8m-8 6h16" />
-        </svg>
-      </div>
-      <ul
-        tabindex="0"
-        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-         <li><a href="#">Home </a></li>
-      <li><a href="#">Service </a></li>
-      <li><a href="#">Portfolio </a></li>
-      <li><a href="#">Blog </a></li>
-      <li><a href="#">Contact Us </a></li>
-      </ul>
-    </div>
+    
     <a class="text-2xl lg:text-3xl font-extrabold"> <span class="bg-button_color rounded-full text-xl p-1"><i class="fa-solid fa-arrow-right -rotate-45"></i></span> Rinterio
     </a>
   </div>
@@ -78,13 +54,31 @@
     </ul>
   </div>
   <div class="navbar-end">
-    <div class="space-x-4 text-lg flex ">
+    <div class="space-x-4 text-lg md:flex hidden md:visible ">
       <span><i class="fa-solid fa-magnifying-glass bg-white rounded-full w-10 h-10 flex items-center justify-center"></i></span>
       <span><i class="fa-solid fa-cart-shopping bg-white rounded-full w-10 h-10 flex items-center justify-center"></i></span>
     </div>
-    <a class="btn bg-button_color rounded-full text-xl font-extrabold ml-4">Book Consult
+    
+     <button class="invisible md:visible ">
+       <a class="btn bg-button_color rounded-full lg:text-xl lg:font-extrabold ml-4 md:text-lg md:font-semibold">Book Consult
       <span class="bg-[#1C1C1C] text-white rounded-full text-xl p-1"><i class="fa-solid fa-arrow-right -rotate-45"></i></span>
-    </a>
+      </a>
+     </button>
+    
+     <div class="dropdown">
+      <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+      <ul
+        tabindex="0"
+        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+         <li><a href="#">Home </a></li>
+      <li><a href="#">Service </a></li>
+      <li><a href="#">Portfolio </a></li>
+      <li><a href="#">Blog </a></li>
+      <li><a href="#">Contact Us </a></li>
+      </ul>
+    </div>
   </div>
 </div>
 
